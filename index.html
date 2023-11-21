@@ -11,7 +11,7 @@
 
       h2 {
         text-align: left;
-        font-family: Helvetica;
+        font-family: Helvetica, sans-serif;
       }
 
       .header {
@@ -52,7 +52,17 @@
       #section4 {
         background-color: #7395AE;
       }
-      
+
+      /*
+Code copied from: Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+Author: w3schools.com
+Name: CSS Horizontal Navigation Bar
+Description: Displays a horizontal navbar
+Date retrieved: Nov. 20, 2023
+*/
+
+      /* Copied code starts */
+
       ul {
         list-style-type: none;
         margin: 0;
@@ -79,9 +89,56 @@
         background-color: #a2b5b8;
       }
 
-  
-  
-</style>
+      /* Copied code ends */
+
+
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -89,14 +146,25 @@
         Jessica's Mechanical Keyboard Hub
       </h1>
     </div>
+    <!--
+Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+Author: w3schools.com
+Name: CSS Horizontal Navigation Bar
+Description: Displays a horizontal navbar
+Date retrieved: Nov. 20, 2023
+-->
 
+    <!-- Copied code starts -->
     <ul>
-      <li><a href="#section0">Home</a></li>
+      <li><a href="#section0">Home</a>
+      </li>
       <li><a href="#section1">First build</a></li>
       <li><a href="#section2">Second build</a></li>
       <li><a href="#section3">Third build</a></li>
       <li><a href="#section4">Fourth build</a></li>
     </ul>
+    <!-- Copied code ends -->
+
 
 
 
@@ -107,7 +175,47 @@
       <h2>
         My first ever build!
       </h2>
-      <img src="myfirstbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400"><br><br>
+      <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+      <img src="myfirstbuild.jpg" alt="Birds eye view of my first keyboard build" width="500" height="400">
       <img src="myfirstbuildsideview.jpg" alt="Side view of my first keyboard build" width="500" height="400">
     </div>
 
